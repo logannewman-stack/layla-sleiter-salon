@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f4ec;
+  color: #2a2622;
+  font-family: 'Jost', system-ui, sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+#root {
+  position: relative;
+  width: 100%;
+}
+
+::selection {
+  background: rgba(183, 154, 107, 0.28);
+  color: #141210;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1ebdf;
+}
+::-webkit-scrollbar-thumb {
+  background: #b7ae9f;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9081;
+}
+
+@layer components {
+  /* Small uppercase label used above headings */
+  .eyebrow {
+    @apply inline-flex items-center gap-3 text-[0.7rem] font-medium uppercase tracking-luxe text-champagne-600;
+  }
+
+  /* Serif display heading defaults */
+  .h-display {
+    @apply font-display font-medium leading-[0.98] tracking-tight text-ink-900;
+  }
+
+  /* Thin hairline divider */
+  .hairline {
+    @apply h-px w-full bg-ink-900/10;
+  }
+
+  /* Frosted light card */
+  .card-cream {
+    @apply rounded-[4px] border border-ink-900/10 bg-cream-50;
+  }
+}
+
+/* Underline-grow link */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 1px;
+  width: 0;
+  background: currentColor;
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* Subtle grain overlay for warmth */
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
