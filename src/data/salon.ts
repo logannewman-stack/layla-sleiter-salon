@@ -8,7 +8,7 @@ export const salon = {
   name: 'Layla Sleiter',
   fullName: 'Layla Sleiter Salon Studio',
   monogram: 'LS',
-  owner: 'Layla Sleiter',
+  owner: 'Layla Sleiter', 
   tagline: 'Extensions, color & couture hair',
   city: 'Des Moines, Iowa',
   phoneDisplay: '(515) 555-0147',
