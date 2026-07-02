@@ -1,7 +1,7 @@
 /**
  * Single source of truth for all salon content.
  * Edit business details, services, pricing, hours and images here.
- * Image paths point to /public/images â swap the files or paths to use your own photos.
+ * Image paths point to /public/images Ã¢ÂÂ swap the files or paths to use your own photos.
  */
 
 export const salon = {
@@ -19,9 +19,9 @@ export const salon = {
   instagram: 'https://instagram.com',
   facebook: 'https://facebook.com',
   hours: [
-    { day: 'Tuesday â Friday', time: '9:00 AM â 7:00 PM' },
-    { day: 'Saturday', time: '9:00 AM â 4:00 PM' },
-    { day: 'Sunday â Monday', time: 'Closed' },
+    { day: 'Tuesday Ã¢ÂÂ Friday', time: '9:00 AM Ã¢ÂÂ 7:00 PM' },
+    { day: 'Saturday', time: '9:00 AM Ã¢ÂÂ 4:00 PM' },
+    { day: 'Sunday Ã¢ÂÂ Monday', time: 'Closed' },
   ],
 }
 
@@ -30,29 +30,29 @@ export const salon = {
  * ---------------------------------------------------------------------------
  * Each slot below shows a labelled placeholder. To use a real photo, drop the
  * file into /public/images with the filename shown, then change the extension
- * here from `.svg` to your file's (e.g. `.jpg`). Recommended photo â slot:
+ * here from `.svg` to your file's (e.g. `.jpg`). Recommended photo Ã¢ÂÂ slot:
  *
- *   hero              â Layla in the salon (black suit, standing)        [tall 2:3]
- *   portrait          â Layla headshot / owner photo                     [tall 4:5]
- *   extensions        â extensions being installed (side profile)        [tall 4:5]
- *   extensionsDetail  â close-up of the weft / hand-tied row             [tall 4:5]
- *   beforeAfter       â before/after transformation (side-by-side)       [square 1:1]
- *   color             â color / balayage result                          [tall 4:5]
- *   haircut           â stylist cutting / combing a client               [tall 4:5]
- *   nails             â manicure                                         [square 1:1]
- *   pedicure          â pedicure                                         [square 1:1]
- *   interior          â wide shot of the salon space                     [wide 16:9]
+ *   hero              Ã¢ÂÂ Layla in the salon (black suit, standing)        [tall 2:3]
+ *   portrait          Ã¢ÂÂ Layla headshot / owner photo                     [tall 4:5]
+ *   extensions        Ã¢ÂÂ extensions being installed (side profile)        [tall 4:5]
+ *   extensionsDetail  Ã¢ÂÂ close-up of the weft / hand-tied row             [tall 4:5]
+ *   beforeAfter       Ã¢ÂÂ before/after transformation (side-by-side)       [square 1:1]
+ *   color             Ã¢ÂÂ color / balayage result                          [tall 4:5]
+ *   haircut           Ã¢ÂÂ stylist cutting / combing a client               [tall 4:5]
+ *   nails             Ã¢ÂÂ manicure                                         [square 1:1]
+ *   pedicure          Ã¢ÂÂ pedicure                                         [square 1:1]
+ *   interior          Ã¢ÂÂ wide shot of the salon space                     [wide 16:9]
  * ---------------------------------------------------------------------------
  */
 export const images = {
   hero: '/images/hero.svg',
-  portrait: '/images/portrait.svg',
-  interior: '/images/interior.svg',
-  extensions: '/images/extensions.svg',
-  extensionsDetail: '/images/extensions-detail.svg',
-  beforeAfter: '/images/before-after.svg',
+  portrait: '/images/portrait.jpg',
+  interior: '/images/interior.jpg',
+  extensions: '/images/extensions.jpg',
+  extensionsDetail: '/images/extensions-detail.jpg',
+  beforeAfter: '/images/before-after.jpg',
   color: '/images/color.svg',
-  haircut: '/images/haircut.svg',
+  haircut: '/images/haircut.jpg',
   nails: '/images/nails.svg',
   pedicure: '/images/pedicure.svg',
 }
@@ -68,35 +68,35 @@ export const services: Service[] = [
   {
     title: 'Hair Extensions',
     blurb:
-      'Our specialty. Hand-tied, weft and tape-in extensions applied for a flawless, undetectable blend â length and fullness that move like your own.',
+      'Our specialty. Hand-tied, weft and tape-in extensions applied for a flawless, undetectable blend Ã¢ÂÂ length and fullness that move like your own.',
     image: images.extensions,
     points: ['Hand-tied & weft installs', 'Custom color-matched', 'Move-ins & maintenance'],
   },
   {
     title: 'Color & Balayage',
     blurb:
-      'Dimensional balayage, all-over color, vivids and lived-in blondes â painted by hand for depth that grows out beautifully.',
+      'Dimensional balayage, all-over color, vivids and lived-in blondes Ã¢ÂÂ painted by hand for depth that grows out beautifully.',
     image: images.color,
     points: ['Balayage & foilyage', 'Full & partial highlights', 'Corrective color'],
   },
   {
     title: 'Precision Cuts',
     blurb:
-      'Tailored cuts and blowouts designed around your face, texture and lifestyle â finished with a style you can recreate at home.',
+      'Tailored cuts and blowouts designed around your face, texture and lifestyle Ã¢ÂÂ finished with a style you can recreate at home.',
     image: images.haircut,
     points: ['Womens & mens cuts', 'Dry & texture cutting', 'Blowout styling'],
   },
   {
     title: 'Manicures',
     blurb:
-      'Clean, meticulous nail care â classic and gel manicures with a polished, long-lasting finish in a calm, elevated space.',
+      'Clean, meticulous nail care Ã¢ÂÂ classic and gel manicures with a polished, long-lasting finish in a calm, elevated space.',
     image: images.nails,
     points: ['Classic & gel manicures', 'Nail art on request', 'Strengthening treatments'],
   },
   {
     title: 'Pedicures',
     blurb:
-      'A restorative spa pedicure from soak to polish â softened, refreshed and finished to perfection.',
+      'A restorative spa pedicure from soak to polish Ã¢ÂÂ softened, refreshed and finished to perfection.',
     image: images.pedicure,
     points: ['Spa & gel pedicures', 'Callus therapy', 'Warm-towel finish'],
   },
@@ -168,7 +168,7 @@ export const testimonials: Testimonial[] = [
   },
   {
     quote:
-      'I came in for a full refresh before my wedding â hair, nails and toes â and left feeling like the best version of myself. Layla is incredibly talented.',
+      'I came in for a full refresh before my wedding Ã¢ÂÂ hair, nails and toes Ã¢ÂÂ and left feeling like the best version of myself. Layla is incredibly talented.',
     name: 'Sydney R.',
     detail: 'Bridal Package',
   },
@@ -176,7 +176,7 @@ export const testimonials: Testimonial[] = [
 
 export const stats = [
   { value: '10+', label: 'Years behind the chair' },
-  { value: '4.9â', label: 'Average client rating' },
+  { value: '4.9Ã¢ÂÂ', label: 'Average client rating' },
   { value: '2,000+', label: 'Happy clients styled' },
   { value: '100%', label: 'Custom color-matched' },
 ]
